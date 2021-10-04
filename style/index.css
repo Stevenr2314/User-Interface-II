@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
     padding:0;
     margin:0;
     max-width: 100%;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
 }
 
 /* General Style */
@@ -131,7 +131,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     width: 17%;
     height: 40vh;
     text-align: center;
@@ -164,4 +163,72 @@ footer .contact-bttn {
 footer .contact-bttn:hover {
     background-color: whitesmoke;
     color: #161616;
+}
+
+/* Media Queries */
+
+/* 500px Width - Mobile Phone screen */
+@media(max-width:500px) {
+    /* Nav Bar */
+    nav {
+        width: 30%;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .links a{
+        padding: 4% 3%;
+    }
+
+    /* Top content */
+    #top h2 {
+        font-size: 3rem;
+    }
+
+    /* Main project */
+
+    #mid {
+        display: flex;
+        justify-content: center;
+        background-color: darkslategrey;
+        padding: 2% 0;
+    }
+    .main-project {
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Bottom Section */
+
+    #bottom {
+        background-color: darkslategrey;
+        flex-wrap: wrap;
+    }
+
+    .btm-div {
+        width: 45%;
+        margin: 3% 0;
+        height: 100vh;
+    }
+
+    .btm-txt-div {
+        width: 85%;
+    }
+
+    .text p {
+        color: whitesmoke;
+        font-size: 1.6rem;
+    }
+
+    /* Footer Section */
+
+    footer {
+        padding: 9% 0;
+        background-color: rgb(171, 188, 189);
+    }
+
+    footer .contact-bttn {
+        font-size: 1.9rem;
+        padding: 2% 5%;
+    }
 }
