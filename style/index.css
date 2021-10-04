@@ -88,6 +88,7 @@ nav {
     border: 2px solid #161616;
     border-radius: 3px;
     font-size: 1.7rem;
+    letter-spacing: .25rem;
     transition: 1s;
 }
 
@@ -167,8 +168,13 @@ footer .contact-bttn:hover {
 
 /* Media Queries */
 
-/* 500px Width - Mobile Phone screen */
-@media(max-width:500px) {
+/* ******************  800px Width - Tablet Screen  ********************** */
+
+@media (max-width:800px) {
+    
+    h1 {
+        font-size: 7rem;
+    }
     /* Nav Bar */
     nav {
         width: 30%;
@@ -177,12 +183,98 @@ footer .contact-bttn:hover {
         flex-direction: column;
     }
     .links a{
-        padding: 4% 3%;
+        padding: 7% 3%;
+        font-size: 2.6rem;
+        letter-spacing: .25rem;
     }
 
     /* Top content */
     #top h2 {
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    #top p {
+        font-size: 2.3rem;
+        margin: 2% 8%;
+        line-height: 1.8;
+    }
+
+    /* Mid Content */
+
+    #mid {
+        display: flex;
+        justify-content: center;
+        background-color: darkslategrey;
+        padding: 2% 0;
+    }
+    .main-project {
+        width: 90%;
+    }
+
+    /* Bottom Section */
+
+    #bottom {
+        background-color: darkslategrey;
+        flex-wrap: wrap;
+    }
+
+    .btm-div {
+        width: 45%;
+        margin: 3% 0;
+        height: 95vh;
+    }
+
+    .btm-txt-div {
+        width: 85%;
+    }
+
+    .text p {
+        color: whitesmoke;
+        font-size: 2.3rem;
+    }
+
+    /* Footer Section */
+
+    footer {
+        padding: 9% 0;
+        background-color: rgb(171, 188, 189);
+    }
+
+    footer .contact-bttn {
+        font-size: 2.4rem;
+        padding: 2% 5%;
+    }
+}
+
+/* ***********  500px Width - Mobile Phone screen  ************ */
+
+@media(max-width:500px) {
+
+    h1 {
+        font-size: 6.5rem;
+    }
+
+    /* Nav Bar */
+    nav {
+        width: 40%;
+    }
+    .links{
+        flex-direction: column;
+    }
+    .links a{
+        padding: 4% 3%;
+        letter-spacing: .1rem;
+    }
+
+    /* Top content */
+    #top h2 {
+        font-size: 3.1rem;
+    }
+
+    #top p {
+        font-size: 2rem;
+        margin: 2% 7%;
+        line-height: 1.7;
     }
 
     /* Main project */
@@ -195,7 +287,6 @@ footer .contact-bttn:hover {
     }
     .main-project {
         width: 90%;
-        text-align: center;
     }
 
     /* Bottom Section */
@@ -217,7 +308,7 @@ footer .contact-bttn:hover {
 
     .text p {
         color: whitesmoke;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
 
     /* Footer Section */
